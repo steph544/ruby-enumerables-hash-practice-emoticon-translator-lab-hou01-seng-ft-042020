@@ -2,7 +2,7 @@
 require "yaml"
 require 'pry'
 
-def load_library (file_path)
+def load_library(file_path)
 emoticons= YAML.load_file(file_path)
 hash={"get_meaning":{},
   "get_emoticon":{}}
@@ -21,6 +21,7 @@ hash
 end 
 
 def get_japanese_emoticon(file_path, emoticon)
+  binding.pry 
 if load_library(file_path)[:get_emoticon].find {|key, value| value == emoticon
   return value
 }
