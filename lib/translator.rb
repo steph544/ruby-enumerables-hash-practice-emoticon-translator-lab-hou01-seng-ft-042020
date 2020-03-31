@@ -29,7 +29,12 @@ end
 end 
 
 def get_english_meaning
-  # code goes here
+ if load_library(file_path)[:get_meaning][emoticon] 
+ load_library(file_path)[:get_meaning][emoticon] 
+else 
+  "Sorry, emoticon was not found"
+end 
+end 
 end
 
  
