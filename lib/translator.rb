@@ -35,7 +35,6 @@ else
   "Sorry, emoticon was not found"
 end 
 end 
-end
 
  
 
