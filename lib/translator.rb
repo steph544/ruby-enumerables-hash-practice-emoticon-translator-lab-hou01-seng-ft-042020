@@ -26,6 +26,7 @@ if load_library(file_path)[:get_emoticon].find {|key, value| value == emoticon
   return value
 }
 end 
+end 
 
 def get_english_meaning
   # code goes here
