@@ -21,10 +21,10 @@ hash
 end 
 
 def get_japanese_emoticon(file_path, emoticon)
-  binding.pry 
 if load_library(file_path)[:get_emoticon][emoticon] 
-  return value
-}
+ load_library(file_path)[:get_emoticon][emoticon] 
+else 
+  "sorry emoticon wasn't found"
 end 
 end 
 
