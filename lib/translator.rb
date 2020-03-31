@@ -22,7 +22,7 @@ end
 
 def get_japanese_emoticon(file_path, emoticon)
   binding.pry 
-if load_library(file_path)[:get_emoticon].find {|key, value| value == emoticon
+if load_library(file_path)[:get_emoticon][emoticon] 
   return value
 }
 end 
